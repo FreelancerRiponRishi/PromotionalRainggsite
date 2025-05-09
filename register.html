@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<!-- Meta setup -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="keywords" content="">
+		<meta name="decription" content="">
+		<meta name="designer" content="">
+		
+		<!-- Title -->
+		<title>Register</title>
+		
+		<!-- Fav Icon -->
+		<link rel="icon" href="img/favicon.png" />
+		
+		<!-- Main StyleSheet -->
+		<link rel="stylesheet" href="style.css" />
+		
+		<!-- Responsive CSS -->
+		<link rel="stylesheet" href="css/responsive.css" />
+		
+	</head>
+	<body>
+		<!--[if lte IE 9]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+		<![endif]-->
+		<!-- topheader-area start -->
+		<section class="topheader-area">
+			<div class="topheader-part">
+				<p><img src="img/logo18+.png" alt="images not found" /> Accessible only to persons aged 18 and over. Please gamble responsibly.</p>
+			</div>
+		</section>
+		<!-- topheader-area end -->
+		<!-- header-area start -->
+		<header class="header-area">
+			<div class="container">
+				<div class="header-part">
+					<!-- logo start-->
+					<div class="header-logo">
+						<a href="index.html"><img src="img/logo.png" alt="logo" /></a>
+					</div>
+					<!-- logo end-->
+				</div>
+			</div>
+		</header>
+		<!-- header-area end -->
+		<!-- form-area start -->
+		<section class="form-area">
+			<div class="container">
+				
+				<div class="formbox">
+					<div class="formheading">
+						<h2>Sign Up</h2>
+					</div>
+					<div class="formpart">
+						<form action="#" method="POST">
+							<!--fromitem start-->
+							<div class="fromitems">
+								<p>Username</p>
+								<div class="fromitem">
+									<input type="text" name="name" placeholder="Enter your username">
+								</div>
+								
+								<p>Password</p>
+								<div class="password-container">
+									<input type="password" id="passwordInput" placeholder="Enter your password">
+									<button type="button" class="toggle-password" onclick="togglePassword('passwordInput', 'eyeIcon1')">
+									<img id="eyeIcon1" src="img/eyeclose.svg" alt="Show Password">
+									</button>
+								</div>
+								<p>Email</p>
+								<div class="fromitem">
+									<input type="email" name="email" placeholder="Enter your email">
+								</div>
+								
+								
+								
+							</div>
+							<div class="maincheckbox">
+								<label class="checkboxpart">
+									I am at least 18 years of age, and accept the <span>Terms of Service</span>.
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label>
+								
+							</div>
+							<div class="fromitem2">
+								<input type="submit" value="Register">
+							</div>
+							<div class="fromitemor">
+								<span></span>
+								<p>or</p>
+							</div>
+							<div class="frombtns">
+								<div class="frombtn1">
+									<a href="#"><img src="img/fmicon1.png" alt="icon" /> Sign in with steam</a>
+								</div>
+								<div class="frombtn1">
+									<a href="#"><img src="img/fmicon2.png" alt="icon" />Sign in with google</a>
+								</div>
+							</div>
+							<div class="fromitem3">
+								<h6>Already  have an account? <a href="logIn.html">Login here</a></h6>
+							</div>
+							<!--fromitem end-->
+						</form>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- form-area end -->
+		<!-- footer-area start -->
+		<footer class="footer-area">
+			<div class="container">
+				<div class="footer-part">
+					<div class="footer-logo">
+						<a href="index.html">
+							<img src="img/logo.png" alt="logo" />
+						</a>
+					</div>
+					<div class="footer-text">
+						
+						<p>The Fastest Growing CS2 (CS:GO) Unboxing Site.<br> Rain.gg is independent and not affiliated with, endorsed by, or connected to Counter-Strike, Valve LLC, Steam, or any of its subsidiaries or affiliates.</p>
+					</div>
+					<div class="footer-nav">
+						<ul>
+							<li><a href="privaccypolicy.html">Privacy Policy</a></li>
+							<li><span>|</span></li>
+							<li><a href="terms&conditions.html">Terms and Conditions</a></li>
+							<li><span>|</span></li>
+							<li><a href="cookiepolicy.html">Cookies Policy</a></li>
+						</ul>
+					</div>
+					
+					
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<p>©2024 . All rights reserved</p>
+			</div>
+		</footer>
+		<!-- footer-area end -->
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!-- Main jQuery
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+		-->
+		<!-- Custom jQuery -->
+		<script src="js/scripts.js"></script>
+		<script>
+		function togglePassword(inputId, iconId) {
+		const passwordInput = document.getElementById(inputId);
+		const eyeIcon = document.getElementById(iconId);
+		if (passwordInput.type === "password") {
+		passwordInput.type = "text";
+		eyeIcon.src = "img/eye.svg";  // Change to "eyeclose.svg"
+		} else {
+		passwordInput.type = "password";
+		eyeIcon.src = "img/eyeclose.svg";  // Change back to "eye.svg"
+		}
+		}
+		</script>
+		
+		
+	</body>
+</html>
